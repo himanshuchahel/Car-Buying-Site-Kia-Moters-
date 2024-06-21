@@ -1,0 +1,346 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kia Signature Bold";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #12580152;
+    border-radius: 50%;
+    z-index: 8;
+    position: fixed;
+    filter: blur(50px);
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /*background-color: black;*/
+    position: relative;
+    z-index: 10;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    /*background-color: red;*/
+    
+}
+nav img{
+    width: 20%;
+    height: 0%;
+
+}
+
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a{
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+  
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+}  
+#loader h3{
+    font-size: 2vw;
+}
+
+.parallax {
+  background-image: url('project pics/images/slideshow/wp7118492.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1 {
+  background-image: url('project pics/images/slideshow/wp8276069-kia-cars-wallpapers.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  background-image: url('project pics/images/New-Kia-Brand-Showcase-1c.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax3 {
+  background-image: url('project pics/images/slideshow/Kia-Sonet-Front-scaled.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#box{
+  height:1950px;
+  width: 100%;
+  background-color:white;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 100px;
+  font-weight: 5;
+  
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: 3;
+  display: flex;
+  gap: 200px;
+  word-spacing: 340px;
+  
+}
+
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  select[type=option], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  input[type=number1], select, textarea {
+    width: 87%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: vertical;
+  }
+  option {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+      
+  }
+  input[type=submit] {
+    background-color: #070000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  input[type=text]:hover, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    color: gray;
+    border-bottom: 1px solid black;
+    resize: vertical;
+  }
+
+  select[type=option]:hover, select, textarea  {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: vertical;
+  }
+  input[type=number]:hover, select, textarea  {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: vertical;
+  }
+
+  input[type=email]:hover, select, textarea  {
+    width: 83%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: vertical;
+  }
+
+  input[type=number1]:hover, select, textarea  {
+    width: 87%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: vertical;
+  }
+
+hr:hover{
+  color: red;
+}
+#phoneValidationMsg{
+  color: red;
+  font-size: 15px;
+  text-indent: 350px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

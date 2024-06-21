@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy|Kia™ </title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="buy.css">
+   
+</head>
+<body>
+    <div id="loader">
+        <h3><img src="project pics/images/logo/1686590298kia-logo-white.png" height="50" width="300"></h3>
+        <h3>Movement</h3>
+        <h3>that</h3>
+        <h3>inspires</h3>
+    </div>
+    <div id="main">
+        <div id="page1">
+            <div id="cursor">
+                
+            </div>
+            <div id="cursor-blur">
+
+            </div>
+        <video autoplay loop muted src="project pics/videos/videoplayback.mp4"></video>
+        
+        <div id="page1-content">
+        <nav> 
+            <a href="index.html"><img src="project pics/images/logo/1686590127kia-logo-black.png"></a></img>
+            <ul>
+                <li><a href="showintrest.html">Intrest</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Buy</a></li>
+                <li><a href="">ContactUs</a></li>   
+            </ul>
+        </nav>
+    </div>
+    </div>
+    </div>
+    <div class="parallax"></div>
+<div class="parallax1"></div>
+<div  id="box">
+<center>
+    <h3> <b> Buy </b></h3>
+</center>
+<br>
+<h2><b> Seltos Sonet EV6</b></h2>
+<br>
+<br>
+<h1><b> Personal Details</b><h1>
+<hr style="width: 19%;">
+    <form name="myForm3"  id="form_id3" method="post" action="buy.php">
+        <br>
+        <select type="option" required id="Salutation" name="Salutation" placeholder="*Salutation">
+        <option value="">*Salutation</option>  
+        <option value="Mr.">Mr.</option>
+        <option value="Ms.">Ms.</option>
+        </select>
+        <br>
+        <br>
+        <input type="text" required id="first_name" name="first_name" placeholder="*First Name">
+        <br>
+        <br>
+        <input type="text" required id="last_name" name="last_name" placeholder="*Last Name">
+        <br>
+        <br>
+        <input type="email" required id="email" name="email" placeholder="*Email">
+        <br>
+        <br>
+        <input type="number" required id="adhaar_no" name="adhaar_no" placeholder="*ADHAAR CARD NO.">
+        <br>  
+        <br> 
+        <input type="number" required id="mobile_no" name="mobile_no" onchange="validatePhoneNumber()" placeholder="Mobile Number">
+        <div id="phoneValidationMsg"></div>
+        <br>
+        <select type="option" required id="State" name="State">
+            <option value="">*Select a State</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands </option>
+            <option value="Andhra Pradesh">  Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">  Arunachal Pradesh</option>
+            <option value="Assam">  Assam</option>
+            <option value="Bihar">  Bihar</option>
+            <option value="Chandigarh">  Chandigarh</option>
+            <option value="Chhattisgarh">  Chhattisgarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">  Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="Delhi">  Delhi</option>
+            <option value="Goa">  Goa</option>
+            <option value="Gujarat">  Gujarat</option>
+            <option value="Haryana">  Haryana</option>
+            <option value="Himachal Pradesh">  Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">  Jammu and Kashmir</option>
+            <option value="Jharkhand">  Jharkhand</option>
+            <option value="Karnataka">  Karnataka</option>
+            <option value="Kerala">  Kerala</option>
+            <option value="Ladakh">  Ladakh</option>
+            <option value="Lakshadweep">  Lakshadweep</option>
+            <option value="Madhya Pradesh">  Madhya Pradesh</option>
+            <option value="Maharashtra">  Maharashtra</option>
+            <option value="Manipur">  Manipur</option>
+            <option value="Meghalaya">  Meghalaya</option>
+            <option value="Mizoram">  Mizoram</option>
+            <option value="Nagaland">  Nagaland</option>
+            <option value="Odisha">  Odisha</option>
+            <option value="Puducherry">  Puducherry</option>
+            <option value="Punjab">  Punjab</option>
+            <option value="Rajasthan">  Rajasthan</option>
+            <option value="Sikkim">  Sikkim</option>
+            <option value="Tamil Nadu">   Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">  Tripura</option>
+            <option value="Union territory">Union territory</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">  Uttarakhand</option>
+            <option value="West Bengal">  West Bengal</option>
+        </select>
+        <br>
+        <br>
+        <input type="text" required id="City" name="City" placeholder="*City">
+        <br>
+        <br>
+        <h4><b>Vehicle Details</b></h4>
+        <hr style="width: 18%;">
+        <br>    
+        <select type="option" required id="Model" name="Model" placeholder="SELTOS">
+                        <option value="model">*Model</option>
+                        <option value="SELTOS">SELTOS</option>
+                      <option value="SONET">SONET</option>
+                      <option value="EV6">EV6</option>
+        </select>
+        <br>
+        <br>
+        <select type="option" required id="Varient" name="Varient" placeholder="VARIENT">
+            <option value="">Varient</option>
+        </select>
+        <br>
+        <br>
+        <select type="option" required id="Price" name="Price" placeholder="Price">
+            <option value="P">Price</option>
+        </select>
+        <br>
+        <br>
+        <h4><b>Payment for (Booking:- Rs.28,000)</b></h4>
+        <hr style="width: 42%;">
+        <br>    
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                
+                  <div class="row">
+                    <div class="col-50">
+                      <h1>Billing Address</h1>
+                      <input type="text" required id="firstname" name="firstname" placeholder="*First name">
+                      <input type="text" required id="mail" name="mail" placeholder="*Email">
+                      <input type="text" required id="address" name="address" placeholder="*Address">
+                      <input type="text" required id="city" name="city" placeholder="*City">
+                      <div class="row">
+                        <div class="col-50">
+                          <input type="text" required id="state" name="state" placeholder="*State">
+                        </div>
+                        <div class="col-50">
+                          <input type="text" required id="zip" name="zip" placeholder="*Zip code">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-50">
+                      <h1>Payment</h1>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <input type="text" required id="cname" name="cardname" placeholder="Holder's Name (John More Doe)">
+                      <input type="text" required id="ccnum" name="cardnumber" placeholder=" Card No.(1111-2222-3333-4444)">
+                      <input type="text" required id="expmonth" name="expmonth" placeholder="Expmonth(September)">
+                      <div class="row">
+                        <div class="col-50">
+                          <input type="text" required id="expyear" name="expyear" placeholder="Expyear(2018)">
+                        </div>
+                        <div class="col-50">
+                          <input type="text" required id="cvv" name="cvv" placeholder="CVV">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <label><input type="checkbox" checked="checked" required name="sameadr"> Booking address same as billing</label>
+                  
+                  <input type="submit" value="Continue to checkout" class="btn" name="Submit" onclick="validateForm()"/>
+                <br>
+                <br>
+                <br>  
+            </div>
+            </div>
+        </div>        
+    </form>
+</div>
+<div class="parallax2"></div>
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="buy.js"></script>
+</body>
+</html>

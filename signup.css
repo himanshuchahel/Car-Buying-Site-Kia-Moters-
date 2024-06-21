@@ -1,0 +1,335 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kia Signature Bold";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+}
+
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+}  
+#loader h3{
+    font-size: 2vw;
+}
+
+footer{
+    height: 500px;
+    width: 100%;
+    color: #ffff;
+    position: relative;
+}
+footer img{
+    position: absolute;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  #scroller::-webkit-scrollbar {
+    display: none;
+  }
+  #scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  #scroller h4 {
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 1000;
+    font-family: gilroy;
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+  }
+  #scroller h4:hover {
+    color: white;
+  }
+  #image2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #flex{
+    display: flex;
+    gap: 1000px;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+.slideshow-container {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    object-fit: cover;
+}  
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  p{
+    font-size: 13px;
+    color: gray;
+
+  }
+    
+    input[type=text], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      color: black;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+    }
+    select[type=option], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+    }
+    input[type=number], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+    }
+    input[type=number1], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+    }
+    
+    input[type=password], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    input[type=email], select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    option {
+      padding: 12px 12px 12px 0;
+      display: inline-block;    
+    }
+    input[type=submit] {
+      background-color: #070000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      float: center;
+    }
+    #button {
+      background-color: #070000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      float: center;
+      text-underline-position: below;
+    }
+
+    #button:hover{
+      background-color: #ccc;
+      color: black;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #ccc;
+      color: black;
+    }
+    
+    input[type=text]:hover, select, textarea {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      color: gray;
+      border-bottom: 1px solid black;
+      resize: vertical;
+    }
+  
+    select[type=option]:hover, select, textarea  {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid black;
+      resize: vertical;
+    }
+    input[type=number]:hover, select, textarea  {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid black;
+      resize: vertical;
+    }
+    input[type=number1]:hover, select, textarea  {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid black;
+      resize: vertical;
+    }
+    input[type=password]:hover, select, textarea  {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid black;
+      resize: vertical;
+    }
+  
+
+    
+    input[type=email]:hover, select, textarea  {
+      width: 50%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid black;
+      resize: vertical;
+    }
+
+
+    #container {
+      width: 100%;
+      height: 100%;
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+     input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }  
+#container h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+}
+#container h1 :hover{
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+}
+#phoneValidationMsg{
+  color: red;
+  font-size: 15px;
+  text-indent: 350px;
+}
+
+#message {
+  display:none;
+  text-indent: 350px;
+}
+
+#message p {
+  font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+}

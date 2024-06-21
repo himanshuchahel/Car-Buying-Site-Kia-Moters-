@@ -1,0 +1,210 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kia Signature Bold";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #b2222252;
+    border-radius: 50%;
+    z-index: 8;
+    position: fixed;
+    filter: blur(50px);
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /*background-color: black;*/
+    position: relative;
+    z-index: 10;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #dadada;
+    
+}
+nav img{
+    width: 20%;
+    height: 0%;
+
+}
+
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a{
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+#page2 h4{
+    font-size: 5vw;
+    font-family: "Rejouice Headline";
+    animation-name: scroll1;
+    font-weight: bold;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+#page2 p{
+    font-size: 2vw;
+
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+#page3 h4{
+    font-size: 5vw;
+    font-family: "Rejouice Headline";
+    animation-name: scroll1;
+    font-weight: bold;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+#page3 p{
+    font-size: 2vw;
+
+}
+
+#main2 {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #home {
+    /* margin-top: 100%; */
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+    canvas {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+#image{
+    width: 100px;
+    height: 100px;
+}  
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+}  
+#loader h3{
+    font-size: 2vw;
+}
+
+footer{
+    height: 500px;
+    width: 100%;
+    color: #ffff;
+    position: relative;
+}
+footer img{
+    position: absolute;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  #scroller::-webkit-scrollbar {
+    display: none;
+  }
+  #scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  #scroller h4 {
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 1000;
+    font-family: gilroy;
+    margin-right: 20px;
+    transition: all linear 0.3s;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+  }
+  #scroller h4:hover {
+    color: white;
+  }
+  #image2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #flex{
+    display: flex;
+    gap: 1000px;
+  }
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
